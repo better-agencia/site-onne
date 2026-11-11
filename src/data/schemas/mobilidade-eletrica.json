@@ -1,0 +1,145 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "LocalBusiness",
+        "ElectronicsStore"
+      ],
+      "@id": "https://onnebr.com/#organizacao",
+      "name": "ONNE",
+      "alternateName": "ONNE Drones",
+      "slogan": "Tecnologia em movimento",
+      "description": "Revenda Autorizada DJI em São Carlos - SP. A ONNE orienta, capacita e oferece suporte em drones DJI Agriculture, Enterprise e Consumer, além de mobilidade elétrica.",
+      "url": "https://onnebr.com/",
+      "logo": "https://onnebr.com/assets/img/logotipo-onne.png",
+      "image": "https://onnebr.com/assets/img/og-home.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. João Orlando Ruggiero, 45",
+        "addressLocality": "São Carlos",
+        "addressRegion": "SP",
+        "postalCode": "13563-840",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -21.9708273,
+        "longitude": -47.9314889
+      },
+      "hasMap": "https://maps.app.goo.gl/BH5ne6KMrkJcbhfJ7",
+      "areaServed": {
+        "@type": "State",
+        "name": "São Paulo"
+      },
+      "email": "contato@onnebr.com",
+      "knowsAbout": [
+        "Drones DJI",
+        "DJI Agriculture",
+        "DJI Enterprise",
+        "DJI Consumer",
+        "Pulverização agrícola",
+        "Topografia e mapeamento",
+        "Inspeção industrial",
+        "Vigilância e segurança",
+        "Audiovisual",
+        "Mobilidade elétrica"
+      ],
+      "telephone": "+55 16 99755-4669",
+      "sameAs": [
+        "https://www.instagram.com/somos.onne/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "telephone": "+55 16 99755-4669",
+        "email": "contato@onnebr.com",
+        "url": "https://wa.me/5516997554669?text=Ol%C3%A1%2C%20vim%20do%20site",
+        "areaServed": "BR",
+        "availableLanguage": [
+          "Portuguese"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://onnebr.com/mobilidade-eletrica/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qual a economia real de uma moto elétrica?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A economia depende da tarifa de energia, da distância rodada e do preço do combustível. A conta considera energia por km contra gasolina, além da ausência de trocas de óleo, filtros, relação e velas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto tempo dura a bateria?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A vida útil é medida em ciclos completos de carga e varia com o uso e a temperatura. As especificações de motor, autonomia, velocidade, carga e bateria são confirmadas por modelo no test-ride e na proposta — a ONNE não publica números genéricos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso fazer test-ride em São Carlos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. A cotação para pessoa física inclui o agendamento do test-ride na loja, condições de pagamento e pronta-entrega, conforme disponibilidade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A ONNE atende frotas corporativas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Para frotas, elaboramos estudo de ROI, condições comerciais para múltiplas unidades e contrato de manutenção preventiva."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://onnebr.com/mobilidade-eletrica/#itens",
+      "name": "Mobilidade elétrica",
+      "numberOfItems": 3,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Product",
+            "name": "Motocicleta elétrica urbana",
+            "category": "Mobilidade elétrica",
+            "url": "https://onnebr.com/mobilidade-eletrica/#motos",
+            "description": "Linha Urbana: motocicleta elétrica para deslocamento casa–trabalho, com baixo custo por km e recarga simples. Especificações sob consulta."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Product",
+            "name": "Motocicleta elétrica executiva",
+            "category": "Mobilidade elétrica",
+            "url": "https://onnebr.com/mobilidade-eletrica/#motos",
+            "description": "Linha Executiva: motocicleta elétrica com mais conforto e acabamento para uso pessoal e profissional. Especificações sob consulta."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Product",
+            "name": "Motocicleta elétrica para frotas",
+            "category": "Mobilidade elétrica",
+            "url": "https://onnebr.com/mobilidade-eletrica/#motos",
+            "description": "Linha Frota: motocicleta elétrica para entregas e deslocamento interno, com foco em custo operacional. Especificações sob consulta."
+          }
+        }
+      ]
+    }
+  ]
+}

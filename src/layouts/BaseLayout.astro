@@ -1,0 +1,113 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FloatingCta from '../components/FloatingCta.astro';
+import Intro from '../components/Intro.astro';
+import DevMode from '../components/DevMode.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  menuName: string;
+  breadcrumbLabel?: string;
+  bodyClass?: string;
+  vertical?: string;
+  ogImage?: string;
+  ogType?: string;
+  noindex?: boolean;
+  breadcrumbs?: boolean;
+  intro?: boolean;
+  schema?: Record<string, unknown>;
+}
+
+const {
+  title,
+  description,
+  path,
+  menuName,
+  breadcrumbLabel,
+  bodyClass = 'page',
+  vertical = 'especialista',
+  ogImage = 'og-onne.jpg',
+  ogType = 'website',
+  noindex = false,
+  breadcrumbs = true,
+  intro = false,
+  schema,
+} = Astro.props;
+
+const site = 'https://onnebr.com';
+const canonical = new URL(path, site).href;
+const image = new URL(`/assets/img/${ogImage}`, site).href;
+const robots = noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large';
+---
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{intro && <link rel="preload" as="video" type="video/mp4" href="/assets/video/intro-horizontal.mp4" media="(min-width: 721px)" fetchpriority="high">}
+{intro && <link rel="preload" as="video" type="video/mp4" href="/assets/video/intro-vertical.mp4" media="(max-width: 720px)" fetchpriority="high">}
+{intro && <script is:inline>
+(function () {
+  try {
+    if (sessionStorage.getItem("onne_intro_seen") === "1") return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    document.documentElement.classList.add("intro-armed");
+    window.setTimeout(function () {
+      document.documentElement.classList.remove("intro-armed");
+    }, 13000);
+  } catch (err) {}
+})();
+</script>}
+<meta name="theme-color" content="#5e5c5d">
+<title>{title}</title>
+<meta name="description" content={description}>
+<meta name="robots" content={robots}>
+<meta name="author" content="ONNE">
+<link rel="canonical" href={canonical}>
+<meta property="og:type" content={ogType}>
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="ONNE">
+<meta property="og:title" content={title}>
+<meta property="og:description" content={description}>
+<meta property="og:url" content={canonical}>
+<meta property="og:image" content={image}>
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content={title}>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content={title}>
+<meta name="twitter:description" content={description}>
+<meta name="twitter:image" content={image}>
+<meta name="twitter:image:alt" content={title}>
+<meta name="geo.region" content="BR-SP">
+<meta name="geo.placename" content="São Carlos">
+<meta name="geo.position" content="-21.9708273;-47.9314889">
+<meta name="ICBM" content="-21.9708273, -47.9314889">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+{path === '/demo-enterprise/' && <link rel="stylesheet" href="/assets/css/demo-enterprise.css">}
+{schema && <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>}
+</head>
+<body class={bodyClass} data-vertical={vertical}>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<Header />
+<main id="conteudo">
+{intro && <Intro />}
+<slot />
+</main>
+<FloatingCta />
+<Footer />
+{import.meta.env.DEV && <DevMode />}
+<script is:inline src="/assets/js/main.js" defer></script>
+{path === '/agricultura/' && <script is:inline src="/assets/js/agras-compare.js" defer></script>}
+{path === '/acessorios/' && <script is:inline src="/assets/js/acessorios-slider.js" defer></script>}
+{path === '/criadores-e-audiovisual/' && <script is:inline src="/assets/js/escolha-slider.js" defer></script>}
+</body>
+</html>

@@ -1,0 +1,12 @@
+---
+interface Props { label: string }
+const { label } = Astro.props;
+---
+<nav class="breadcrumbs" aria-label="Trilha de navegação">
+  <div class="wrap">
+    <ol>
+      <li><a href="/">Início</a></li>
+      <li><span aria-current="page">{label}</span></li>
+    </ol>
+  </div>
+</nav>

@@ -1,0 +1,104 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "LocalBusiness",
+        "ElectronicsStore"
+      ],
+      "@id": "https://onnebr.com/#organizacao",
+      "name": "ONNE",
+      "alternateName": "ONNE Drones",
+      "slogan": "Tecnologia em movimento",
+      "description": "Revenda Autorizada DJI em São Carlos - SP. A ONNE orienta, capacita e oferece suporte em drones DJI Agriculture, Enterprise e Consumer, além de mobilidade elétrica.",
+      "url": "https://onnebr.com/",
+      "logo": "https://onnebr.com/assets/img/logotipo-onne.png",
+      "image": "https://onnebr.com/assets/img/og-home.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. João Orlando Ruggiero, 45",
+        "addressLocality": "São Carlos",
+        "addressRegion": "SP",
+        "postalCode": "13563-840",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -21.9708273,
+        "longitude": -47.9314889
+      },
+      "hasMap": "https://maps.app.goo.gl/BH5ne6KMrkJcbhfJ7",
+      "areaServed": {
+        "@type": "State",
+        "name": "São Paulo"
+      },
+      "email": "contato@onnebr.com",
+      "knowsAbout": [
+        "Drones DJI",
+        "DJI Agriculture",
+        "DJI Enterprise",
+        "DJI Consumer",
+        "Pulverização agrícola",
+        "Topografia e mapeamento",
+        "Inspeção industrial",
+        "Vigilância e segurança",
+        "Audiovisual",
+        "Mobilidade elétrica"
+      ],
+      "telephone": "+55 16 99755-4669",
+      "sameAs": [
+        "https://www.instagram.com/somos.onne/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "telephone": "+55 16 99755-4669",
+        "email": "contato@onnebr.com",
+        "url": "https://wa.me/5516997554669?text=Ol%C3%A1%2C%20vim%20do%20site",
+        "areaServed": "BR",
+        "availableLanguage": [
+          "Portuguese"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://onnebr.com/treinamentos/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Preciso de curso para pilotar drone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A necessidade de habilitação depende do peso, da finalidade e do tipo de operação. Para uso profissional e operações específicas, há requisitos da ANAC e do DECEA. A ONNE orienta a trilha adequada."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Os cursos são presenciais?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Há turmas presenciais em São Carlos, in-company na fazenda ou empresa, online ao vivo e híbridas. A modalidade é indicada conforme o curso e o número de alunos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que é o CAAR?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "É o Curso para Aplicação Aeroagrícola Remota, voltado à operação de drones de pulverização e alinhado às exigências do MAPA. A formação prepara o piloto para a rotina de campo com segurança."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A ONNE recicla equipes anualmente?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. O programa de pós-certificação e reciclagem anual atende empresas que precisam manter equipes atualizadas e conformes, com materiais e checklists revisados."
+          }
+        }
+      ]
+    }
+  ]
+}

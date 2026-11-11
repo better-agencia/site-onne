@@ -1,0 +1,295 @@
+# ONNE — Ficha técnica completa da linha DJI Agras
+
+> Dados publicados pela DJI nas páginas de especificações de cada modelo. Valores de vazão, faixa efetiva e capacidade variam conforme bicos, bateria e configuração. A ONNE confirma a ficha final no orçamento.
+
+Modelos: DJI Agras T25P; DJI Agras T55; DJI Agras T70P; DJI Agras T100; DJI Agras T20P seminovo; DJI Agras T25 seminovo; DJI Agras T30 seminovo; DJI Agras T40 seminovo; DJI Agras T50 seminovo.
+
+## DJI Agras T25P (Novo)
+
+### Operação
+
+- Perfil indicado: Operação solo, pomares e áreas menores
+### Pulverização
+
+- Tanque de calda: 20 L
+- Vazão máxima: 16 L/min (2 bicos) · 24 L/min (4 bicos)
+- Faixa efetiva: 4–7 m
+- Bicos: 2 padrão · 4 opcionais
+### Dispersão de sólidos
+
+- Tanque de sólidos: 30 L
+- Vazão máxima: 190 kg/min
+- Faixa efetiva: 3–8 m
+- Carga útil: 25 kg
+### Aeronave
+
+- Peso da aeronave: 33 kg (com bateria)
+- Peso máximo de decolagem: 53 kg pulverização · 60 kg dispersão
+- Bateria de voo: DB800 · 15.500 mAh
+- Controle remoto: TKPL 2 · tela 7 pol. · 1.400 nits
+### Energia
+
+- Gerador / carregador: D6000i · 6 kW
+### Segurança
+
+- Sistema de segurança: Safety System 3.0 · radar + tri-visão
+- Alcance e evasão: 60 m · evasão ≤ 10 m/s
+
+## DJI Agras T55 (Novo)
+
+### Operação
+
+- Perfil indicado: Operação solo, médias áreas e custo-benefício
+### Pulverização
+
+- Tanque de calda: 50 L
+- Vazão máxima: 40 L/min (2 bicos) · 50 L/min (4 bicos névoa)
+- Faixa efetiva: 4–11 m
+- Bicos: 2 padrão · 4 opcionais
+### Dispersão de sólidos
+
+- Tanque de sólidos: 80 L
+- Vazão máxima: 400 kg/min
+- Faixa efetiva: 3–10 m
+- Carga útil: 55 kg
+### Aeronave
+
+- Peso da aeronave: 45 kg (DB1050) · 48,4 kg (DB1580)
+- Peso máximo de decolagem: 95–103 kg pulverização · 104–108 kg dispersão
+- Bateria de voo: DB1050 20.000 mAh ou DB1580 30.000 mAh
+- Controle remoto: TKPL 2 · tela 7 pol. · 1.400 nits
+### Energia
+
+- Gerador / carregador: D8000iE · 6.500 W CC
+### Segurança
+
+- Sistema de segurança: Radar + Tri-Vision
+- Alcance e evasão: 60 m · evasão ≤ 13,8 m/s
+
+## DJI Agras T70P (Novo)
+
+### Operação
+
+- Perfil indicado: Médias e grandes áreas, pulverização e dispersão
+### Pulverização
+
+- Tanque de calda: 70 L
+- Vazão máxima: 30 L/min (2 bicos) · 40 L/min (4 bicos)
+- Faixa efetiva: 4–11 m
+- Bicos: 2 padrão · 4 opcionais
+### Dispersão de sólidos
+
+- Tanque de sólidos: 100 L
+- Vazão máxima: 400 kg/min
+- Faixa efetiva: 3–10 m
+- Carga útil: 70 kg
+### Aeronave
+
+- Peso da aeronave: 52 kg (DB1580) · 56 kg (DB2160)
+- Peso máximo de decolagem: 102–105 kg pulv. · 126 kg disp. (DB1580) · 126–130 kg (DB2160)
+- Bateria de voo: DB1580 30.000 mAh ou DB2160 41.000 mAh
+- Controle remoto: TKPL 2 · tela 7 pol. · 1.400 nits
+### Energia
+
+- Gerador / carregador: D14000iE · 9.650 W CC
+### Segurança
+
+- Sistema de segurança: Safety System 3.0 · radar + tri-visão
+- Alcance e evasão: 60 m · evasão ≤ 13,8 m/s
+
+## DJI Agras T100 (Novo)
+
+### Operação
+
+- Perfil indicado: Grande escala, máxima carga e produtividade
+### Pulverização
+
+- Tanque de calda: 100 L
+- Vazão máxima: 30 L/min (2 bicos) · 40 L/min (4 bicos)
+- Faixa efetiva: 5–11 m
+- Bicos: 2 padrão · 4 opcionais
+### Dispersão de sólidos
+
+- Tanque de sólidos: 150 L
+- Vazão máxima: 400 kg/min
+- Faixa efetiva: 3–10 m
+- Carga útil: 100 kg
+### Aeronave
+
+- Peso da aeronave: 75 kg (2 bicos) · 77 kg (4 bicos)
+- Peso máximo de decolagem: 175 kg (2 bicos) · 177 kg (4 bicos) · 175 kg dispersão
+- Bateria de voo: DB2160 · 41.000 mAh
+- Controle remoto: TKPL 2 · tela 7 pol. · 1.400 nits
+### Energia
+
+- Gerador / carregador: D14000iE · 11.500 W CC
+### Segurança
+
+- Sistema de segurança: Safety System 3.0 · LiDAR + radar + Penta-Vision
+- Alcance e evasão: 60 m · evasão ≤ 13,8 m/s
+
+## DJI Agras T20P seminovo (Seminovo revisado)
+
+### Operação
+
+- Perfil indicado: Entrada no agro com investimento menor
+### Pulverização
+
+- Tanque de calda: 20 L
+- Vazão máxima: 12 L/min (2 bombas de 6 L/min)
+- Faixa efetiva: 7 m
+- Bicos: 2 (LX8060SZ)
+### Dispersão de sólidos
+
+- Tanque de sólidos: 35 L
+- Vazão máxima: —
+- Faixa efetiva: 7 m
+- Carga útil: 25 kg
+### Aeronave
+
+- Peso da aeronave: 32 kg (com bateria)
+- Peso máximo de decolagem: 52 kg pulverização · 58 kg dispersão
+- Bateria de voo: BAX601 · 13.000 mAh
+- Controle remoto: RM700 · tela 7,02 pol. · 1.200 nits
+### Energia
+
+- Gerador / carregador: D6000i · 4.200 W CC
+### Segurança
+
+- Sistema de segurança: Radar omnidirecional + visão binocular
+- Alcance e evasão: 50 m · evasão ≤ 10 m/s
+
+## DJI Agras T25 seminovo (Seminovo revisado)
+
+### Operação
+
+- Perfil indicado: Entrada no agro com menor investimento
+### Pulverização
+
+- Tanque de calda: 20 L
+- Vazão máxima: 16 L/min (2 bicos) · 24 L/min (4 bicos)
+- Faixa efetiva: 4–7 m
+- Bicos: 2 padrão (LX8060SZ) · 4 opcionais
+### Dispersão de sólidos
+
+- Tanque de sólidos: 35 L
+- Vazão máxima: —
+- Faixa efetiva: 5–8 m
+- Carga útil: 25 kg
+### Aeronave
+
+- Peso da aeronave: 32 kg (com bateria)
+- Peso máximo de decolagem: 52 kg pulverização · 58 kg dispersão
+- Bateria de voo: DB800 · 15.000 mAh
+- Controle remoto: RM700B · tela 7,02 pol. · 1.200 nits
+### Energia
+
+- Gerador / carregador: D6000i · 6.000 W
+### Segurança
+
+- Sistema de segurança: Radar de matriz faseada + visão binocular
+- Alcance e evasão: 50 m · evasão ≤ 10 m/s
+
+## DJI Agras T30 seminovo (Seminovo revisado)
+
+### Operação
+
+- Perfil indicado: Equilíbrio entre capacidade e transporte
+### Pulverização
+
+- Tanque de calda: 30 L
+- Vazão máxima: 7,2 L/min (16 bicos) · 8 L/min (opcional)
+- Faixa efetiva: 4–9 m
+- Bicos: 16 (SX11001VS)
+### Dispersão de sólidos
+
+- Tanque de sólidos: 40 L
+- Vazão máxima: —
+- Faixa efetiva: —
+- Carga útil: 35 kg
+### Aeronave
+
+- Peso da aeronave: 26,4 kg (sem bateria)
+- Peso máximo de decolagem: 73 kg
+- Bateria de voo: BAX501 · 29.000 mAh
+- Controle remoto: RM500-ENT · tela 5,5 pol. · 1.000 nits
+### Energia
+
+- Gerador / carregador: D9000i · 7.200 W
+### Segurança
+
+- Sistema de segurança: Radar esférico omnidirecional + radar superior
+- Alcance e evasão: 30 m · evasão ≤ 7 m/s
+
+## DJI Agras T40 seminovo (Seminovo revisado)
+
+### Operação
+
+- Perfil indicado: Alta produtividade para prestadores de serviço
+### Pulverização
+
+- Tanque de calda: 40 L
+- Vazão máxima: 12 L/min (2 bombas de 6 L/min)
+- Faixa efetiva: 11 m
+- Bicos: 2 (LX8060SZ)
+### Dispersão de sólidos
+
+- Tanque de sólidos: 70 L
+- Vazão máxima: —
+- Faixa efetiva: 7 m
+- Carga útil: 50 kg
+### Aeronave
+
+- Peso da aeronave: 50 kg (com bateria)
+- Peso máximo de decolagem: 90 kg pulverização · 101 kg dispersão
+- Bateria de voo: BAX601 · 30.000 mAh
+- Controle remoto: RM700 · tela 7,02 pol. · 1.200 nits
+### Energia
+
+- Gerador / carregador: D12000iE · 9.000 W CC
+### Segurança
+
+- Sistema de segurança: Radar omnidirecional + visão binocular
+- Alcance e evasão: 50 m · evasão ≤ 7 m/s
+
+## DJI Agras T50 seminovo (Seminovo revisado)
+
+### Operação
+
+- Perfil indicado: Prestadores de serviço e frotas em expansão
+### Pulverização
+
+- Tanque de calda: 40 L
+- Vazão máxima: 16 L/min (2 bicos) · 24 L/min (4 bicos)
+- Faixa efetiva: 4–11 m
+- Bicos: 2 padrão (LX8060SZ) · 4 opcionais
+### Dispersão de sólidos
+
+- Tanque de sólidos: 75 L
+- Vazão máxima: —
+- Faixa efetiva: 8 m
+- Carga útil: 50 kg
+### Aeronave
+
+- Peso da aeronave: 52 kg (com bateria)
+- Peso máximo de decolagem: 92 kg pulverização · 103 kg dispersão
+- Bateria de voo: DB1560 · 30.000 mAh
+- Controle remoto: RM700B · tela 7,02 pol. · 1.200 nits
+### Energia
+
+- Gerador / carregador: D12000i · 9.000 W CC
+### Segurança
+
+- Sistema de segurança: Radar de matriz faseada + visão binocular
+- Alcance e evasão: 50 m · evasão ≤ 10 m/s
+
+## Contato ONNE
+
+- Site: https://onnebr.com
+- E-mail: contato@onnebr.com
+- WhatsApp: https://wa.me/5516997554669?text=Ol%C3%A1%2C%20vim%20do%20site
+- Instagram: https://www.instagram.com/somos.onne/
+- Endereço: Av. João Orlando Ruggiero, 45 — Jardim Embaré, São Carlos — SP, CEP 13563-840
+- Mapa: https://maps.app.goo.gl/BH5ne6KMrkJcbhfJ7
+
+Conteúdo em português do Brasil. Versão resumida: https://onnebr.com/llms.txt

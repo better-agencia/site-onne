@@ -1,0 +1,752 @@
+---
+// Modo desenvolvimento: incluído apenas quando o site roda com `npm run dev`.
+// Não vai para o build de produção.
+---
+
+<div class="onne-dev" data-onne-dev>
+  <button class="onne-dev__toggle" type="button" data-onne-dev-toggle aria-pressed="false">
+    <span class="onne-dev__dot" aria-hidden="true"></span>
+    <span data-onne-dev-toggle-label>Modo dev</span>
+  </button>
+
+  <aside class="onne-dev__panel" data-onne-dev-panel hidden aria-label="Mapa de edição da página">
+    <header class="onne-dev__head">
+      <div>
+        <strong>Modo desenvolvimento</strong>
+        <span data-onne-dev-page></span>
+      </div>
+      <button class="onne-dev__close" type="button" data-onne-dev-close aria-label="Fechar painel">×</button>
+    </header>
+    <p class="onne-dev__hint">
+      Clique em um texto ou imagem para copiar a referência. Use <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd> para ligar/desligar.
+    </p>
+    <div class="onne-dev__actions">
+      <button type="button" data-onne-dev-copy-map>Copiar mapa da página</button>
+      <button type="button" data-onne-dev-off>Sair do modo dev</button>
+    </div>
+    <section class="onne-dev__group">
+      <h2>Seções</h2>
+      <ol data-onne-dev-sections></ol>
+    </section>
+    <section class="onne-dev__group">
+      <h2>Imagens</h2>
+      <ol data-onne-dev-images></ol>
+    </section>
+  </aside>
+
+  <div class="onne-dev__layer" data-onne-dev-layer aria-hidden="true"></div>
+  <div class="onne-dev__hover" data-onne-dev-hover aria-hidden="true"></div>
+  <div class="onne-dev__tooltip" data-onne-dev-tooltip hidden></div>
+  <div class="onne-dev__toast" data-onne-dev-toast hidden role="status" aria-live="polite"></div>
+</div>
+
+<style is:inline>
+  .onne-dev {
+    display: contents;
+  }
+
+  .onne-dev__toggle,
+  .onne-dev__panel,
+  .onne-dev__tooltip,
+  .onne-dev__toast {
+    font-family: var(--font-body, system-ui, sans-serif);
+    box-sizing: border-box;
+  }
+
+  .onne-dev__toggle {
+    position: fixed;
+    left: 16px;
+    bottom: 16px;
+    z-index: 10001;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 14px;
+    border: 1px solid rgba(193, 229, 102, 0.55);
+    border-radius: 999px;
+    background: #0d100b;
+    color: #eaf5d0;
+    font: 700 11px/1 var(--font-body, system-ui, sans-serif);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  }
+
+  .onne-dev__toggle:hover {
+    background: #171c12;
+  }
+
+  .onne-dev__toggle[aria-pressed="true"] {
+    background: #c1e566;
+    color: #111;
+    border-color: #c1e566;
+  }
+
+  .onne-dev__dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: currentColor;
+    box-shadow: 0 0 0 3px rgba(193, 229, 102, 0.18);
+  }
+
+  .onne-dev__panel {
+    position: fixed;
+    left: 16px;
+    bottom: 64px;
+    z-index: 10001;
+    width: min(370px, calc(100vw - 32px));
+    max-height: min(72vh, 620px);
+    overflow: auto;
+    padding: 16px;
+    border: 1px solid rgba(193, 229, 102, 0.32);
+    border-radius: 14px;
+    background: #0d100b;
+    color: #e9f2dc;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55);
+  }
+
+  .onne-dev__panel[hidden] {
+    display: none;
+  }
+
+  .onne-dev__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+
+  .onne-dev__head strong {
+    display: block;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+  }
+
+  .onne-dev__head span {
+    display: block;
+    margin-top: 3px;
+    color: #a9b89a;
+    font-size: 11px;
+  }
+
+  .onne-dev__close {
+    flex: none;
+    width: 26px;
+    height: 26px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    background: transparent;
+    color: #e9f2dc;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  .onne-dev__hint {
+    margin: 0 0 12px;
+    color: #a9b89a;
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .onne-dev__hint kbd {
+    padding: 1px 4px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.06);
+    font: inherit;
+    font-size: 10px;
+  }
+
+  .onne-dev__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .onne-dev__actions button {
+    padding: 7px 10px;
+    border: 1px solid rgba(193, 229, 102, 0.4);
+    border-radius: 8px;
+    background: rgba(193, 229, 102, 0.1);
+    color: #dff2b4;
+    font: 600 10px/1 var(--font-body, system-ui, sans-serif);
+    letter-spacing: 0.04em;
+    cursor: pointer;
+  }
+
+  .onne-dev__actions button:hover {
+    background: rgba(193, 229, 102, 0.2);
+  }
+
+  .onne-dev__group + .onne-dev__group {
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .onne-dev__group h2 {
+    margin: 0 0 8px;
+    color: #c1e566;
+    font: 700 10px/1 var(--font-body, system-ui, sans-serif);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .onne-dev__group ol {
+    display: grid;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .onne-dev__group li button {
+    display: block;
+    width: 100%;
+    padding: 6px 8px;
+    border: 0;
+    border-radius: 7px;
+    background: transparent;
+    color: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .onne-dev__group li button:hover {
+    background: rgba(193, 229, 102, 0.1);
+  }
+
+  .onne-dev__group li b {
+    display: block;
+    color: #f2f8e8;
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  .onne-dev__group li small {
+    display: block;
+    margin-top: 2px;
+    overflow: hidden;
+    color: #93a382;
+    font-size: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .onne-dev__layer {
+    position: fixed;
+    inset: 0;
+    z-index: 250;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .onne-dev__badge {
+    position: absolute;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font: 700 9px/1.2 var(--font-body, system-ui, sans-serif);
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+  }
+
+  .onne-dev__badge--section {
+    background: #c1e566;
+    color: #101408;
+  }
+
+  .onne-dev__badge--image {
+    background: #ff5ccf;
+    color: #1a0014;
+  }
+
+  .onne-dev__outline {
+    position: absolute;
+    border: 1px dashed rgba(193, 229, 102, 0.75);
+    border-radius: 4px;
+  }
+
+  .onne-dev__outline--image {
+    border: 1px solid rgba(255, 92, 207, 0.85);
+  }
+
+  .onne-dev__hover {
+    position: fixed;
+    z-index: 9998;
+    display: none;
+    border: 1px solid #c1e566;
+    border-radius: 3px;
+    background: rgba(193, 229, 102, 0.08);
+    pointer-events: none;
+  }
+
+  .onne-dev__tooltip {
+    position: fixed;
+    z-index: 10002;
+    width: min(430px, calc(100vw - 24px));
+    padding: 10px 12px;
+    border: 1px solid rgba(193, 229, 102, 0.45);
+    border-radius: 10px;
+    background: #0d100b;
+    color: #e9f2dc;
+    font: 11px/1.45 var(--font-body, system-ui, sans-serif);
+    box-shadow: 0 16px 44px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+  }
+
+  .onne-dev__tooltip[hidden] {
+    display: none;
+  }
+
+  .onne-dev__tooltip b {
+    display: block;
+    margin-bottom: 4px;
+    color: #c1e566;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .onne-dev__tooltip code {
+    color: #ffd9f2;
+    font: 10px/1.4 var(--font-mono, monospace);
+    word-break: break-all;
+  }
+
+  .onne-dev__tooltip span {
+    display: block;
+    margin-top: 3px;
+  }
+
+  .onne-dev__tooltip .onne-dev__muted {
+    color: #9cab8b;
+  }
+
+  .onne-dev__toast {
+    position: fixed;
+    left: 50%;
+    bottom: 26px;
+    z-index: 10003;
+    padding: 9px 16px;
+    border-radius: 999px;
+    background: #c1e566;
+    color: #111;
+    font: 700 11px/1 var(--font-body, system-ui, sans-serif);
+    letter-spacing: 0.04em;
+    transform: translateX(-50%);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  }
+
+  .onne-dev__toast[hidden] {
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    .onne-dev__panel {
+      bottom: 60px;
+      max-height: 66vh;
+    }
+  }
+</style>
+
+<script is:inline>
+  (() => {
+    const root = document.querySelector("[data-onne-dev]");
+    const main = document.querySelector("main#conteudo");
+    if (!root || !main) return;
+
+    const toggle = root.querySelector("[data-onne-dev-toggle]");
+    const toggleLabel = root.querySelector("[data-onne-dev-toggle-label]");
+    const panel = root.querySelector("[data-onne-dev-panel]");
+    const layer = root.querySelector("[data-onne-dev-layer]");
+    const hoverBox = root.querySelector("[data-onne-dev-hover]");
+    const tooltip = root.querySelector("[data-onne-dev-tooltip]");
+    const toast = root.querySelector("[data-onne-dev-toast]");
+    const sectionsList = root.querySelector("[data-onne-dev-sections]");
+    const imagesList = root.querySelector("[data-onne-dev-images]");
+    const pageLabel = root.querySelector("[data-onne-dev-page]");
+
+    const normalize = (value) => (value || "").replace(/\s+/g, " ").trim();
+    const truncate = (value, size) => (value.length > size ? value.slice(0, size - 1) + "…" : value);
+
+    let active = false;
+    let blocks = [];
+    let images = [];
+    let sectionMarks = [];
+    let imageMarks = [];
+    let frame = 0;
+    let toastTimer = 0;
+
+    const isDevChrome = (el) => !!(el && el.closest && el.closest(".onne-dev"));
+    const isFormControl = (el) =>
+      !!(el && el.closest && el.closest("input, select, textarea, option, label"));
+
+    function collect() {
+      blocks = Array.from(main.children).filter(
+        (el) => !el.matches("nav.breadcrumbs, .drone-intro, script, style, link, template"),
+      );
+      images = Array.from(main.querySelectorAll("img")).filter((img) => !img.closest(".drone-intro"));
+    }
+
+    function blockOf(el) {
+      let node = el;
+      while (node && node.parentElement && node.parentElement !== main) node = node.parentElement;
+      return node && node.parentElement === main ? node : null;
+    }
+
+    function blockIndex(el) {
+      const block = blockOf(el);
+      return block ? blocks.indexOf(block) + 1 : 0;
+    }
+
+    function blockTitle(el) {
+      if (!el) return "";
+      if (el.matches("nav.anchor-nav")) return "Navegação da página";
+      const heading = el.querySelector("h1, h2, h3");
+      if (heading) return truncate(normalize(heading.textContent), 70);
+      const id = el.getAttribute("id");
+      if (id) return id.replace(/-/g, " ");
+      return el.className || el.tagName.toLowerCase();
+    }
+
+    function blockRef(el) {
+      const index = blockIndex(el);
+      if (!index) return "";
+      const block = blocks[index - 1];
+      const id = block.getAttribute("id");
+      return `Seção ${index}, ${blockTitle(block)}${id ? " (#" + id + ")" : ""}`;
+    }
+
+    function imageIndex(img) {
+      return images.indexOf(img) + 1;
+    }
+
+    function selectorFor(el) {
+      const block = blockOf(el);
+      if (!block) return "";
+      const parts = [];
+      let node = el;
+      while (node && node !== block) {
+        let part = node.tagName.toLowerCase();
+        const id = node.getAttribute("id");
+        const cls = (node.getAttribute("class") || "").split(/\s+/).filter(Boolean)[0];
+        if (id) part += "#" + id;
+        else if (cls) part += "." + cls;
+        const parent = node.parentElement;
+        if (parent) {
+          const same = Array.from(parent.children).filter((child) => child.tagName === node.tagName);
+          if (same.length > 1) part += ":nth-of-type(" + (same.indexOf(node) + 1) + ")";
+        }
+        parts.unshift(part);
+        node = parent;
+      }
+      let blockPart = block.tagName.toLowerCase();
+      if (block.id) blockPart += "#" + block.id;
+      else {
+        const cls = (block.getAttribute("class") || "").split(/\s+/).filter(Boolean)[0];
+        if (cls) blockPart += "." + cls;
+      }
+      parts.unshift(blockPart);
+      return parts.join(" > ");
+    }
+
+    function referenceFor(el) {
+      const page = location.pathname;
+      const block = blockOf(el);
+      const section = blockRef(el) || "Fora das seções numeradas";
+      const image = el.matches("img") ? el : el.querySelector("img");
+      if (image && images.includes(image)) {
+        return [
+          `Página: ${page}`,
+          `Imagem: ${imageIndex(image)}`,
+          section,
+          `Arquivo: ${image.getAttribute("src") || ""}`,
+          `Alt: ${normalize(image.getAttribute("alt")) || "(vazio)"}`,
+          `Seletor: ${selectorFor(image)}`,
+        ].join("\n");
+      }
+      const text = truncate(normalize(el.textContent), 180);
+      const href = el.getAttribute && el.getAttribute("href");
+      return [
+        `Página: ${page}`,
+        section,
+        `Elemento: ${el.tagName.toLowerCase()}${el.className ? "." + String(el.className).split(/\s+/).filter(Boolean).join(".") : ""}`,
+        `Texto: "${text || "(sem texto)"}"`,
+        href ? `Link: ${href}` : "",
+        `Seletor: ${selectorFor(el)}`,
+      ].filter(Boolean).join("\n");
+    }
+
+    function meaningfulTarget(target) {
+      if (!target || !main.contains(target)) return null;
+      return target.closest(
+        "h1, h2, h3, h4, h5, h6, p, li, a, button, img, figure, figcaption, blockquote, strong, em, td, th, label",
+      );
+    }
+
+    function addMark(kind, index, el) {
+      const badge = document.createElement("span");
+      badge.className = "onne-dev__badge onne-dev__badge--" + kind;
+      badge.textContent = (kind === "section" ? "S" : "IMG") + index;
+      const outline = document.createElement("span");
+      outline.className = "onne-dev__outline" + (kind === "image" ? " onne-dev__outline--image" : "");
+      layer.append(badge, outline);
+      return { badge, outline, el };
+    }
+
+    function layoutMarks() {
+      frame = 0;
+      if (!active) return;
+      const viewportH = window.innerHeight;
+      const all = [...sectionMarks, ...imageMarks];
+      for (const mark of all) {
+        const rect = mark.el.getBoundingClientRect();
+        const visible = rect.bottom > 0 && rect.top < viewportH && rect.width > 0 && rect.height > 0;
+        mark.badge.style.display = visible ? "block" : "none";
+        mark.outline.style.display = visible ? "block" : "none";
+        if (!visible) continue;
+        const top = Math.max(rect.top, 4);
+        mark.badge.style.left = Math.max(rect.left, 4) + "px";
+        mark.badge.style.top = top + "px";
+        mark.outline.style.left = rect.left + "px";
+        mark.outline.style.top = rect.top + "px";
+        mark.outline.style.width = rect.width + "px";
+        mark.outline.style.height = rect.height + "px";
+      }
+    }
+
+    function scheduleLayout() {
+      if (!active || frame) return;
+      frame = requestAnimationFrame(layoutMarks);
+    }
+
+    function renderPanel() {
+      pageLabel.textContent = location.pathname;
+      sectionsList.textContent = "";
+      imagesList.textContent = "";
+      blocks.forEach((block, i) => {
+        const li = document.createElement("li");
+        const button = document.createElement("button");
+        button.type = "button";
+        const title = document.createElement("b");
+        title.textContent = `S${i + 1} · ${blockTitle(block)}`;
+        const small = document.createElement("small");
+        small.textContent = block.id ? `#${block.id}` : block.tagName.toLowerCase();
+        button.append(title, small);
+        button.addEventListener("click", () => {
+          block.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+        li.append(button);
+        sectionsList.append(li);
+      });
+      if (!blocks.length) {
+        const li = document.createElement("li");
+        li.textContent = "Nenhuma seção encontrada.";
+        sectionsList.append(li);
+      }
+      images.forEach((image, i) => {
+        const li = document.createElement("li");
+        const button = document.createElement("button");
+        button.type = "button";
+        const title = document.createElement("b");
+        title.textContent = `IMG${i + 1} · ${image.getAttribute("src") || ""}`;
+        const small = document.createElement("small");
+        small.textContent = normalize(image.getAttribute("alt")) || "(sem alt)";
+        button.append(title, small);
+        button.addEventListener("click", () => {
+          image.scrollIntoView({ behavior: "smooth", block: "center" });
+        });
+        li.append(button);
+        imagesList.append(li);
+      });
+      if (!images.length) {
+        const li = document.createElement("li");
+        li.textContent = "Nenhuma imagem encontrada.";
+        imagesList.append(li);
+      }
+    }
+
+    function pageMap() {
+      const lines = [`# Mapa da página ${location.pathname}`, "", "## Seções", ""];
+      blocks.forEach((block, i) => {
+        lines.push(`${i + 1}. ${blockTitle(block)}${block.id ? ` (#${block.id})` : ""}`);
+      });
+      lines.push("", "## Imagens", "");
+      images.forEach((image, i) => {
+        lines.push(
+          `${i + 1}. ${image.getAttribute("src") || ""}, alt: "${normalize(image.getAttribute("alt")) || "(vazio)"}", ${blockRef(image) || "fora das seções"}`,
+        );
+      });
+      return lines.join("\n");
+    }
+
+    async function copyText(text) {
+      try {
+        await navigator.clipboard.writeText(text);
+      } catch (error) {
+        const area = document.createElement("textarea");
+        area.value = text;
+        area.style.position = "fixed";
+        area.style.opacity = "0";
+        document.body.append(area);
+        area.select();
+        try {
+          document.execCommand("copy");
+        } catch (err) {}
+        area.remove();
+      }
+    }
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.hidden = false;
+      window.clearTimeout(toastTimer);
+      toastTimer = window.setTimeout(() => {
+        toast.hidden = true;
+      }, 1800);
+    }
+
+    function showTooltip(target, x, y) {
+      if (!target) {
+        tooltip.hidden = true;
+        hoverBox.style.display = "none";
+        return;
+      }
+      const rect = target.getBoundingClientRect();
+      hoverBox.style.display = "block";
+      hoverBox.style.left = rect.left + "px";
+      hoverBox.style.top = rect.top + "px";
+      hoverBox.style.width = rect.width + "px";
+      hoverBox.style.height = rect.height + "px";
+
+      const image = target.matches("img") ? target : target.querySelector("img");
+      tooltip.textContent = "";
+      const title = document.createElement("b");
+      title.textContent = image && images.includes(image) ? `Imagem ${imageIndex(image)}` : blockRef(target) || "Elemento";
+      tooltip.append(title);
+      if (image && images.includes(image)) {
+        const file = document.createElement("code");
+        file.textContent = image.getAttribute("src") || "";
+        tooltip.append(file);
+        const alt = document.createElement("span");
+        alt.className = "onne-dev__muted";
+        alt.textContent = "Alt: " + (normalize(image.getAttribute("alt")) || "(vazio)");
+        tooltip.append(alt);
+      } else {
+        const text = document.createElement("span");
+        text.textContent = truncate(normalize(target.textContent), 160) || "(sem texto)";
+        tooltip.append(text);
+        const selector = document.createElement("span");
+        selector.className = "onne-dev__muted";
+        const code = document.createElement("code");
+        code.textContent = selectorFor(target);
+        selector.append(code);
+        tooltip.append(selector);
+      }
+      const hint = document.createElement("span");
+      hint.className = "onne-dev__muted";
+      hint.textContent = "Clique para copiar a referência.";
+      tooltip.append(hint);
+
+      tooltip.hidden = false;
+      const pad = 14;
+      const width = tooltip.offsetWidth;
+      const height = tooltip.offsetHeight;
+      let left = x + pad;
+      let top = y + pad;
+      if (left + width > window.innerWidth - 8) left = x - width - pad;
+      if (top + height > window.innerHeight - 8) top = y - height - pad;
+      tooltip.style.left = Math.max(8, left) + "px";
+      tooltip.style.top = Math.max(8, top) + "px";
+    }
+
+    function activate() {
+      if (active) return;
+      active = true;
+      collect();
+      layer.textContent = "";
+      sectionMarks = blocks.map((block, i) => addMark("section", i + 1, block));
+      imageMarks = images.map((image, i) => addMark("image", i + 1, image));
+      renderPanel();
+      panel.hidden = false;
+      toggle.setAttribute("aria-pressed", "true");
+      toggleLabel.textContent = "Sair do modo dev";
+      document.documentElement.classList.add("onne-dev-on");
+      layoutMarks();
+      try { localStorage.setItem("onne_dev_mode", "on"); } catch (error) {}
+    }
+
+    function deactivate() {
+      active = false;
+      layer.textContent = "";
+      sectionMarks = [];
+      imageMarks = [];
+      panel.hidden = true;
+      tooltip.hidden = true;
+      hoverBox.style.display = "none";
+      toggle.setAttribute("aria-pressed", "false");
+      toggleLabel.textContent = "Modo dev";
+      document.documentElement.classList.remove("onne-dev-on");
+      try { localStorage.setItem("onne_dev_mode", "off"); } catch (error) {}
+    }
+
+    function toggleMode() {
+      if (active) deactivate();
+      else activate();
+    }
+
+    toggle.addEventListener("click", toggleMode);
+    root.querySelector("[data-onne-dev-close]").addEventListener("click", deactivate);
+    root.querySelector("[data-onne-dev-off]").addEventListener("click", deactivate);
+    root.querySelector("[data-onne-dev-copy-map]").addEventListener("click", async () => {
+      await copyText(pageMap());
+      showToast("Mapa da página copiado");
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.ctrlKey && event.shiftKey && (event.key === "D" || event.key === "d")) {
+        event.preventDefault();
+        toggleMode();
+      }
+    });
+
+    document.addEventListener("mousemove", (event) => {
+      if (!active || isDevChrome(event.target)) return;
+      const target = meaningfulTarget(document.elementFromPoint(event.clientX, event.clientY));
+      showTooltip(target, event.clientX, event.clientY);
+    });
+
+    document.addEventListener("mouseleave", () => {
+      tooltip.hidden = true;
+      hoverBox.style.display = "none";
+    });
+
+    document.addEventListener(
+      "click",
+      (event) => {
+        if (!active || isDevChrome(event.target) || isFormControl(event.target)) return;
+        const target = meaningfulTarget(event.target);
+        if (!target) return;
+        event.preventDefault();
+        event.stopPropagation();
+        copyText(referenceFor(target));
+        showToast("Referência copiada");
+      },
+      true,
+    );
+
+    window.addEventListener("scroll", scheduleLayout, { passive: true });
+    window.addEventListener("resize", scheduleLayout);
+    new MutationObserver(scheduleLayout).observe(main, { childList: true, subtree: true });
+
+    let saved = null;
+    try { saved = localStorage.getItem("onne_dev_mode"); } catch (error) {}
+    if (saved !== "off") activate();
+  })();
+</script>

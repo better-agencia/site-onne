@@ -1,0 +1,177 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "LocalBusiness",
+        "ElectronicsStore"
+      ],
+      "@id": "https://onnebr.com/#organizacao",
+      "name": "ONNE",
+      "alternateName": "ONNE Drones",
+      "slogan": "Tecnologia em movimento",
+      "description": "Revenda Autorizada DJI em São Carlos - SP. A ONNE orienta, capacita e oferece suporte em drones DJI Agriculture, Enterprise e Consumer, além de mobilidade elétrica.",
+      "url": "https://onnebr.com/",
+      "logo": "https://onnebr.com/assets/img/logotipo-onne.png",
+      "image": "https://onnebr.com/assets/img/og-home.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. João Orlando Ruggiero, 45",
+        "addressLocality": "São Carlos",
+        "addressRegion": "SP",
+        "postalCode": "13563-840",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -21.9708273,
+        "longitude": -47.9314889
+      },
+      "hasMap": "https://maps.app.goo.gl/BH5ne6KMrkJcbhfJ7",
+      "areaServed": {
+        "@type": "State",
+        "name": "São Paulo"
+      },
+      "email": "contato@onnebr.com",
+      "knowsAbout": [
+        "Drones DJI",
+        "DJI Agriculture",
+        "DJI Enterprise",
+        "DJI Consumer",
+        "Pulverização agrícola",
+        "Topografia e mapeamento",
+        "Inspeção industrial",
+        "Vigilância e segurança",
+        "Audiovisual",
+        "Mobilidade elétrica"
+      ],
+      "telephone": "+55 16 99755-4669",
+      "sameAs": [
+        "https://www.instagram.com/somos.onne/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "telephone": "+55 16 99755-4669",
+        "email": "contato@onnebr.com",
+        "url": "https://wa.me/5516997554669?text=Ol%C3%A1%2C%20vim%20do%20site",
+        "areaServed": "BR",
+        "availableLanguage": [
+          "Portuguese"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://onnebr.com/seminovos/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O que o laudo técnico comprova?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O laudo registra histórico e horas de voo, saúde das baterias, integridade mecânica, sensores e calibrações. Cada unidade tem um documento individual assinado pelos técnicos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "As unidades têm garantia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. As condições e o prazo de garantia são informados por unidade, com cobertura de defeitos funcionais auditados e exclusões de desgaste natural e mau uso."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Consigo reservar uma unidade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. A reserva é solicitada pelo formulário com o ID da unidade. O especialista envia o laudo completo em PDF e confirma as condições comerciais antes do envio."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vocês aceitam o meu drone usado na troca?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A avaliação de troca é feita caso a caso, mediante análise técnica do equipamento. Fale com o especialista de seminovos para avaliar a possibilidade."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://onnebr.com/seminovos/#itens",
+      "name": "Drones seminovos revisados",
+      "numberOfItems": 5,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Agras T20P",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "Agro — seminovo"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Agras T25",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "Agro — seminovo"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Agras T30",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "Agro — seminovo"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Agras T40",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "Agro — seminovo"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Agras T50",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "Agro — seminovo"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "LocalBusiness",
+        "ElectronicsStore"
+      ],
+      "@id": "https://onnebr.com/#organizacao",
+      "name": "ONNE",
+      "alternateName": "ONNE Drones",
+      "slogan": "Tecnologia em movimento",
+      "description": "Revenda Autorizada DJI em São Carlos - SP. A ONNE orienta, capacita e oferece suporte em drones DJI Agriculture, Enterprise e Consumer, além de mobilidade elétrica.",
+      "url": "https://onnebr.com/",
+      "logo": "https://onnebr.com/assets/img/logotipo-onne.png",
+      "image": "https://onnebr.com/assets/img/og-home.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. João Orlando Ruggiero, 45",
+        "addressLocality": "São Carlos",
+        "addressRegion": "SP",
+        "postalCode": "13563-840",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -21.9708273,
+        "longitude": -47.9314889
+      },
+      "hasMap": "https://maps.app.goo.gl/BH5ne6KMrkJcbhfJ7",
+      "areaServed": {
+        "@type": "State",
+        "name": "São Paulo"
+      },
+      "email": "contato@onnebr.com",
+      "knowsAbout": [
+        "Drones DJI",
+        "DJI Agriculture",
+        "DJI Enterprise",
+        "DJI Consumer",
+        "Pulverização agrícola",
+        "Topografia e mapeamento",
+        "Inspeção industrial",
+        "Vigilância e segurança",
+        "Audiovisual",
+        "Mobilidade elétrica"
+      ],
+      "telephone": "+55 16 99755-4669",
+      "sameAs": [
+        "https://www.instagram.com/somos.onne/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "telephone": "+55 16 99755-4669",
+        "email": "contato@onnebr.com",
+        "url": "https://wa.me/5516997554669?text=Ol%C3%A1%2C%20vim%20do%20site",
+        "areaServed": "BR",
+        "availableLanguage": [
+          "Portuguese"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://onnebr.com/enterprise/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre Matrice 4E e Matrice 4T?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Matrice 4E é voltada ao mapeamento e à engenharia de alta precisão. A Matrice 4T combina zoom óptico e câmera térmica para inspeção. A escolha depende do dado que você precisa entregar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A ONNE apoia licitações e compras corporativas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Emitimos propostas detalhadas, documentação técnica e apoiamos o processo de compliance para empresas, universidades e órgãos públicos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "É possível automatizar rondas e inspeções?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. As estações DJI Dock permitem missões programadas e operação remota 24/7. O dimensionamento considera conectividade, clima, espaço físico e fluxo de dados."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A ONNE processa os dados ou entrega apenas o equipamento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O escopo pode incluir implantação, treinamento e orientação de processamento. Para serviços de mapeamento e inspeção, a equipe técnica avalia o projeto caso a caso."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre o Matrice 4T e o Matrice 5T?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O Matrice 5T é a geração lançada pela DJI em 2026: traz imagem térmica 1K (1280×1024), zoom óptico de 11× e híbrido de 176×, LiDAR rotativo, radar mmWave tridirecional, classificação IP55, transmissão O4 Enterprise e até 59 minutos de voo. O Matrice 4T permanece como alternativa consolidada para inspeção térmica. A ONNE ajuda a definir qual plataforma faz sentido para o seu entregável."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://onnebr.com/enterprise/#itens",
+      "name": "Equipamentos DJI Enterprise",
+      "numberOfItems": 12,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Matrice 4E",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "DJI Enterprise",
+            "url": "https://onnebr.com/enterprise/#engenharia",
+            "image": "https://onnebr.com/assets/img/modelos/matrice-4e.webp",
+            "description": "Drone DJI Enterprise para mapeamento e engenharia de alta precisão com RTK e câmera de alta resolução."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Matrice 4T",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "DJI Enterprise",
+            "url": "https://onnebr.com/enterprise/#inspecao",
+            "image": "https://onnebr.com/assets/img/modelos/matrice-4t.webp",
+            "description": "Drone DJI Enterprise com câmera térmica radiométrica e zoom óptico para inspeção de ativos e resposta a ocorrências."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Mavic 3M",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "DJI Enterprise",
+            "url": "https://onnebr.com/enterprise/#engenharia",
+            "image": "https://onnebr.com/assets/img/modelos/mavic-3m.webp",
+            "description": "Drone DJI multiespectral para agricultura de precisão, índices de vegetação e mapas de vigor."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Matrice 350 RTK",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "DJI Enterprise",
+            "url": "https://onnebr.com/enterprise/#engenharia",
+            "image": "https://onnebr.com/assets/img/modelos/matrice-350-rtk.webp",
+            "description": "Plataforma DJI Enterprise de carga útil pesada com payloads intercambiáveis para operações multi-sensor."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Matrice 400",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "DJI Enterprise",
+            "url": "https://onnebr.com/enterprise/#engenharia",
+            "image": "https://onnebr.com/assets/img/modelos/matrice-400.webp",
+            "description": "Plataforma DJI Enterprise de grande capacidade para projetos com múltiplos sensores e maior autonomia."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Dock 2",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "DJI Dock",
+            "url": "https://onnebr.com/enterprise/#inspecao",
+            "image": "https://onnebr.com/assets/img/modelos/dock-2.webp",
+            "description": "Estação autônoma DJI Dock 2 para missões programadas com Matrice 3D/3TD."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Dock 3",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "DJI Dock",
+            "url": "https://onnebr.com/enterprise/#inspecao",
+            "image": "https://onnebr.com/assets/img/modelos/dock-3.webp",
+            "description": "Estação autônoma DJI Dock 3 para operação remota com Matrice 4D/4TD."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Dock 4",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "DJI Dock",
+            "url": "https://onnebr.com/enterprise/#inspecao",
+            "image": "https://onnebr.com/assets/img/modelos/dock-4.webp",
+            "description": "Estação autônoma DJI Dock 4 com troca automática de bateria em 25 s e Matrice 5TD."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Inspire 3",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "Audiovisual profissional",
+            "url": "https://onnebr.com/enterprise/#audiovisual",
+            "image": "https://onnebr.com/assets/img/modelos/inspire-3.webp",
+            "description": "Drone DJI Inspire 3 para cinema, publicidade e broadcast com estabilidade de set."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Matrice 5T",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "DJI Enterprise",
+            "url": "https://onnebr.com/enterprise/#engenharia",
+            "image": "https://onnebr.com/assets/img/modelos/matrice-5t.webp",
+            "description": "DJI Matrice 5T: imagem térmica 1K, zoom óptico de 11× e híbrido de 176×, LiDAR, radar mmWave, IP55, transmissão O4 Enterprise e até 59 min de voo. Lançamento DJI de 2026."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Matrice 4TD",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "DJI Enterprise",
+            "url": "https://onnebr.com/enterprise/#app-inspecao-termica",
+            "image": "https://onnebr.com/assets/img/modelos/matrice-4td.webp",
+            "description": "Versão para estação autônoma, indicada para missões programadas de inspeção com DJI Dock."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Matrice 5TD",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "DJI Enterprise",
+            "url": "https://onnebr.com/enterprise/#app-inspecao-termica",
+            "image": "https://onnebr.com/assets/img/modelos/matrice-5t.webp",
+            "description": "Aeronave da família Matrice 5 para a DJI Dock 4, com térmica, zoom e operação 24/7."
+          }
+        }
+      ]
+    }
+  ]
+}

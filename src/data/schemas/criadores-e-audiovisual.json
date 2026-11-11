@@ -1,0 +1,255 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "LocalBusiness",
+        "ElectronicsStore"
+      ],
+      "@id": "https://onnebr.com/#organizacao",
+      "name": "ONNE",
+      "alternateName": "ONNE Drones",
+      "slogan": "Tecnologia em movimento",
+      "description": "Revenda Autorizada DJI em São Carlos - SP. A ONNE orienta, capacita e oferece suporte em drones DJI Agriculture, Enterprise e Consumer, além de mobilidade elétrica.",
+      "url": "https://onnebr.com/",
+      "logo": "https://onnebr.com/assets/img/logotipo-onne.png",
+      "image": "https://onnebr.com/assets/img/og-home.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. João Orlando Ruggiero, 45",
+        "addressLocality": "São Carlos",
+        "addressRegion": "SP",
+        "postalCode": "13563-840",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -21.9708273,
+        "longitude": -47.9314889
+      },
+      "hasMap": "https://maps.app.goo.gl/BH5ne6KMrkJcbhfJ7",
+      "areaServed": {
+        "@type": "State",
+        "name": "São Paulo"
+      },
+      "email": "contato@onnebr.com",
+      "knowsAbout": [
+        "Drones DJI",
+        "DJI Agriculture",
+        "DJI Enterprise",
+        "DJI Consumer",
+        "Pulverização agrícola",
+        "Topografia e mapeamento",
+        "Inspeção industrial",
+        "Vigilância e segurança",
+        "Audiovisual",
+        "Mobilidade elétrica"
+      ],
+      "telephone": "+55 16 99755-4669",
+      "sameAs": [
+        "https://www.instagram.com/somos.onne/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "telephone": "+55 16 99755-4669",
+        "email": "contato@onnebr.com",
+        "url": "https://wa.me/5516997554669?text=Ol%C3%A1%2C%20vim%20do%20site",
+        "areaServed": "BR",
+        "availableLanguage": [
+          "Portuguese"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://onnebr.com/criadores-e-audiovisual/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Preciso de autorização para voar com drone consumer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Drones acima de 250 g e operações profissionais exigem cadastro e observância das regras da ANAC e do DECEA. A ONNE orienta o caminho e oferece treinamento; confirme sempre os requisitos vigentes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual drone escolher para começar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para começar com simplicidade, DJI Neo 2, Flip e Mini 5 Pro são as portas de entrada. O Mini 5 Pro abaixo de 249 g facilita viagens; Flip e Neo priorizam praticidade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vale a pena investir em um drone com câmera Hasselblad?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Se o resultado final exige faixa dinâmica, detalhe e flexibilidade de pós-produção, a linha Mavic Pro faz sentido. Para redes sociais e viagens, modelos menores entregam o necessário com mais leveza."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A ONNE vende acessórios e dá aula de primeiro voo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Temos acessórios originais, kits prontos e treinamentos práticos. O Kit Drone Iniciante inclui aula de primeiro voo na ONNE."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://onnebr.com/criadores-e-audiovisual/#itens",
+      "name": "Drones, câmeras e estabilizadores",
+      "numberOfItems": 11,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Neo 2",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "DJI Consumer"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Flip",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "DJI Consumer"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Lito X1",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "DJI Consumer"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Mini 5 Pro",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "DJI Consumer"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Mavic 4 Pro",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "DJI Consumer"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Avata 360",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "DJI Consumer"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Osmo Pocket 4",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "Câmeras"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Osmo 360",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "Câmeras"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Osmo Mobile",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "Estabilizadores"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Ronin",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "Estabilizadores"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Mic",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "Áudio"
+          }
+        }
+      ]
+    }
+  ]
+}

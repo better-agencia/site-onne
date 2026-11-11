@@ -1,0 +1,209 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "LocalBusiness",
+        "ElectronicsStore"
+      ],
+      "@id": "https://onnebr.com/#organizacao",
+      "name": "ONNE",
+      "alternateName": "ONNE Drones",
+      "slogan": "Tecnologia em movimento",
+      "description": "Revenda Autorizada DJI em São Carlos - SP. A ONNE orienta, capacita e oferece suporte em drones DJI Agriculture, Enterprise e Consumer, além de mobilidade elétrica.",
+      "url": "https://onnebr.com/",
+      "logo": "https://onnebr.com/assets/img/logotipo-onne.png",
+      "image": "https://onnebr.com/assets/img/og-home.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. João Orlando Ruggiero, 45",
+        "addressLocality": "São Carlos",
+        "addressRegion": "SP",
+        "postalCode": "13563-840",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -21.9708273,
+        "longitude": -47.9314889
+      },
+      "hasMap": "https://maps.app.goo.gl/BH5ne6KMrkJcbhfJ7",
+      "areaServed": {
+        "@type": "State",
+        "name": "São Paulo"
+      },
+      "email": "contato@onnebr.com",
+      "knowsAbout": [
+        "Drones DJI",
+        "DJI Agriculture",
+        "DJI Enterprise",
+        "DJI Consumer",
+        "Pulverização agrícola",
+        "Topografia e mapeamento",
+        "Inspeção industrial",
+        "Vigilância e segurança",
+        "Audiovisual",
+        "Mobilidade elétrica"
+      ],
+      "telephone": "+55 16 99755-4669",
+      "sameAs": [
+        "https://www.instagram.com/somos.onne/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "telephone": "+55 16 99755-4669",
+        "email": "contato@onnebr.com",
+        "url": "https://wa.me/5516997554669?text=Ol%C3%A1%2C%20vim%20do%20site",
+        "areaServed": "BR",
+        "availableLanguage": [
+          "Portuguese"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://onnebr.com/vigilancia-e-seguranca/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qual a vantagem da câmera térmica na vigilância?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O sensor térmico identifica assinaturas de calor de pessoas, veículos e focos de incêndio em condições de escuridão, fumaça ou vegetação densa, permitindo ação preventiva antes do contato físico."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso comprar o drone e operar com minha equipe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. A modalidade CAPEX inclui a plataforma, os sensores, o treinamento da equipe e o suporte da ONNE. Também é possível contratar a operação como serviço."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como funciona a operação por contrato?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A ONNE assume equipamento, pilotos certificados, seguro, manutenção e relatórios, com custo mensal previsível. O escopo é definido após estudo do perímetro e da rotina de segurança."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "As imagens podem ser usadas como prova?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A cadeia de custódia é tratada com procedimentos de registro e armazenamento. A validade jurídica depende do caso concreto e deve ser alinhada com o jurídico e as autoridades competentes."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://onnebr.com/vigilancia-e-seguranca/#itens",
+      "name": "Plataformas de vigilância e segurança",
+      "numberOfItems": 7,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Matrice 350 RTK",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "Segurança"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Matrice 4T",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "Segurança"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Dock 2",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "Estação autônoma"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Dock 3",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "Estação autônoma"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Dock 4",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "Estação autônoma"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Matrice 4TD",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "Vigilância e Segurança",
+            "url": "https://onnebr.com/vigilancia-e-seguranca/",
+            "image": "https://onnebr.com/assets/img/modelos/matrice-4td.webp",
+            "description": "Versão para estação autônoma com câmera térmica e zoom, indicada para rondas programadas e resposta a incidentes."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "Product",
+            "name": "DJI Matrice 5TD",
+            "brand": {
+              "@type": "Brand",
+              "name": "DJI"
+            },
+            "category": "Vigilância e Segurança",
+            "url": "https://onnebr.com/vigilancia-e-seguranca/",
+            "image": "https://onnebr.com/assets/img/modelos/matrice-5t.webp",
+            "description": "Nova geração para a DJI Dock 4, com imagem térmica 1K, zoom, detecção automática e operação contínua 24/7."
+          }
+        }
+      ]
+    }
+  ]
+}

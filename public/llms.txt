@@ -1,0 +1,33 @@
+# ONNE, Tecnologia em Movimento
+
+> Revenda Autorizada DJI em São Carlos - SP. A ONNE orienta, capacita e oferece suporte em drones DJI Agriculture, Enterprise e Consumer, além de mobilidade elétrica, acessórios, seminovos e treinamentos.
+
+## Soluções
+- [Agricultura](https://onnebr.com/agricultura/): drones Agras T25P, T55, T70P e T100, sistemas SPAD, misturadores XMixer, energia e suporte à safra.
+- [Enterprise](https://onnebr.com/enterprise/): mapeamento RTK, LiDAR, termografia, inspeção industrial, DJI Dock e audiovisual profissional. Inclui o DJI Matrice 5T (lançamento 2026: imagem térmica 1K, zoom óptico de 11× e 176× híbrido, LiDAR, radar mmWave, IP55, visão noturna 4K, até 59 min de voo). Seções separadas por aplicação: mapeamento e engenharia, inspeção térmica e zoom óptico, energia e indústria, e operações autônomas para verificações, cada uma com capa, contexto e modelos indicados.
+- [Vigilância e Segurança](https://onnebr.com/vigilancia-e-seguranca/): sensores térmicos, estações autônomas e operação de vigilância por contrato (CAPEX ou OPEX).
+- [Criadores e Audiovisual](https://onnebr.com/criadores-e-audiovisual/): DJI Neo 2, Flip, Lito X1, Mini 5 Pro, Mavic 4 Pro, Avata 360, Osmo, Ronin e DJI Mic.
+- [Mobilidade Elétrica](https://onnebr.com/mobilidade-eletrica/): motocicletas elétricas para uso urbano e frotas, com análise de autonomia, recarga e custo por quilômetro.
+
+## Loja, pós-venda e operações
+- [Acessórios e Peças](https://onnebr.com/acessorios/): baterias, controles, hélices, filtros, peças de pulverização e kits.
+- [Drones Seminovos](https://onnebr.com/seminovos/): unidades revisadas com horas de voo, saúde das baterias e laudo técnico individual.
+- [Treinamentos](https://onnebr.com/treinamentos/): 88 cursos e certificações, trilhas básicas e avançadas, CAAR, in-company e reciclagem.
+- [Serviços e Pós-venda](https://onnebr.com/servicos/): oficina de manutenção própria, assistência técnica, manutenção preventiva e corretiva, garantia e prazos combinados. Não inclui operações terceirizadas.
+- [Operação ONNE](https://onnebr.com/vigilancia-e-seguranca/#operacoes): serviços terceirizados de vigilância por contrato; a ONNE também atende projetos de pulverização, mapeamento e inspeção sob consulta.
+- [Sobre a ONNE](https://onnebr.com/sobre/): manifesto, história, estrutura e credenciais.
+- [Contato](https://onnebr.com/contato/): fale conosco e escolha a área de interesse no formulário.
+
+## Localização e contato
+- Endereço: Av. João Orlando Ruggiero, 45 — Jardim Embaré, São Carlos — SP, CEP 13563-840.
+- E-mail: contato@onnebr.com
+- WhatsApp: (16) 99755-4669, https://wa.me/5516997554669?text=Ol%C3%A1%2C%20vim%20do%20site
+- Instagram: @somos.onne, https://www.instagram.com/somos.onne/
+- Mapa: https://maps.app.goo.gl/BH5ne6KMrkJcbhfJ7
+- Atendimento: pessoa física, empresa e órgão público, com uma pessoa da equipe para cada área.
+
+## Observações
+- Preços, disponibilidade de estoque e prazos são confirmados pela ONNE.
+- O contato inicial ocorre pelo formulário, e-mail ou WhatsApp; o número informado no formulário é usado pela equipe para retorno.
+- Conteúdo em português do Brasil. Site oficial: https://onnebr.com
+- Ficha técnica completa da linha DJI Agras (9 modelos, todos os critérios): https://onnebr.com/llms-full.txt
